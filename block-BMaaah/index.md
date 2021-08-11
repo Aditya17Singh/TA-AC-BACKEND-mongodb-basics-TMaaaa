@@ -57,6 +57,8 @@ db.articles.update({"_id": ObjectId("6113c7021a2303f74b18e16d")},{titele: "html"
 
 11. rename details field to description from all articles in articles collection.
 
+db.articles.update({}, {$rename: {details:"description"}})
+
 12. Add additional tag in a specific document.
 
 13. Update an article's title using $set and without $set.
